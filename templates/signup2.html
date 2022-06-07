@@ -255,7 +255,7 @@
                       </svg>
                     </div>
                   </div>
-                  <div class="box basic-drop-shadow">
+                  <div class="box basic-drop-shadow business-btn">
                     <div>
                       <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.09543 18.2329L25 0.865247L48.9046 18.2329L39.7738 46.3344H10.2262L1.09543 18.2329Z"
@@ -267,7 +267,6 @@
                           d="M21.5655 18.3989C22.0344 17.9301 22.6703 17.6667 23.3333 17.6667H26.6666C27.3297 17.6667 27.9656 17.9301 28.4344 18.3989C28.9033 18.8678 29.1666 19.5036 29.1666 20.1667V33.5C29.1666 33.9603 28.7935 34.3334 28.3333 34.3334C27.8731 34.3334 27.5 33.9603 27.5 33.5V20.1667C27.5 19.9457 27.4122 19.7337 27.2559 19.5774C27.0996 19.4212 26.8877 19.3334 26.6666 19.3334H23.3333C23.1123 19.3334 22.9003 19.4212 22.7441 19.5774C22.5878 19.7337 22.5 19.9457 22.5 20.1667V33.5C22.5 33.9603 22.1269 34.3334 21.6666 34.3334C21.2064 34.3334 20.8333 33.9603 20.8333 33.5V20.1667C20.8333 19.5036 21.0967 18.8678 21.5655 18.3989Z"
                           fill="#302E2F" />
                       </svg>
-
                     </div>
                     <div class="individual">
                       <p><b>Business</b><br>Own or belong to a company, this is for you.</p>
@@ -314,13 +313,640 @@
 
                   <hr style="height:2px; width:100%; border-width:0; background-color:#F5F5F5">
                   <label>Your full name*</label>
-                  <input type="text" name="name" placeholder="Enter full name" autocomplete="on">
+                  <input type="text" name="name" id="usr_name" placeholder="Enter full name" autocomplete="on">
                   <label>Email address*</label>
-                  <input type="email" name="email" placeholder="Enter email address" autocomplete="on">
+                  <input type="email" name="email" id="usr_email" placeholder="Enter email address" autocomplete="on">
                   <div class="form-group">
                     <label>Create password*</label>
                     <input id="password-field" type="password" name="password" placeholder="Enter password">
                     <a toggle="#password-field" class="toggle-password">Show</a>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="check_term">
+                    <label>I agree to terms & conditions</label>
+                  </div>
+                  <div>
+                  </div>
+                </form>
+                <button type="submit" class="btn-register" value="Submit">Submit</button>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="register-usr">
+            <div class="lft-pan">
+              <div class="form-box signup-form">
+                <div class="back join-us-desc prev-sec" id="prev">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.8625 3.225L13.3792 1.75L5.13751 10L13.3875 18.25L14.8625 16.775L8.08751 10L14.8625 3.225Z"
+                      fill="#8692A6" />
+                  </svg>
+                  <p>Back</b></p>
+                </div>
+                <form method="POST" id="complete_profile1">
+                  <div class="join-us">
+                    <h3>Register Individual Account!</h3>
+                  </div>
+                  <div class="social-container">
+                    <p class="img-text join-us-desc">For the purpose of industry regulation, your details are required.
+                    </p>
+                  </div>
+
+                  <hr style="height:2px; width:100%; border-width:0; background-color:#F5F5F5">
+
+                  <label>Phone number</label>
+                  <input type="number" id="usr_phone" name="phone" placeholder="Enter full name" autocomplete="on">
+                  <label>Your address</label>
+                  <input type="email" id="usr_address" name="address" placeholder="Please enter address"
+                    autocomplete="on">
+                  <div class="form-group">
+                    <label>Country of residence</label>
+                    <select id="usr_country" name="country">
+
+                      <option value="Afganistan">Afghanistan</option>
+                      <option value="Albania">Albania</option>
+                      <option value="Algeria">Algeria</option>
+                      <option value="American Samoa">American Samoa</option>
+                      <option value="Andorra">Andorra</option>
+                      <option value="Angola">Angola</option>
+                      <option value="Anguilla">Anguilla</option>
+                      <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                      <option value="Cote DIvoire">Cote DIvoire</option>
+                      <option value="Croatia">Croatia</option>
+                      <option value="Cuba">Cuba</option>
+                      <option value="Curaco">Curacao</option>
+                      <option value="Cyprus">Cyprus</option>
+                      <option value="Czech Republic">Czech Republic</option>
+                      <option value="Denmark">Denmark</option>
+                      <option value="Djibouti">Djibouti</option>
+                      <option value="Dominica">Dominica</option>
+                      <option value="Dominican Republic">Dominican Republic</option>
+                      <option value="East Timor">East Timor</option>
+                      <option value="Ecuador">Ecuador</option>
+                      <option value="Egypt">Egypt</option>
+                      <option value="El Salvador">El Salvador</option>
+                      <option value="Equatorial Guinea">Equatorial Guinea</option>
+                      <option value="Eritrea">Eritrea</option>
+                      <option value="Estonia">Estonia</option>
+                      <option value="Ethiopia">Ethiopia</option>
+                      <option value="Falkland Islands">Falkland Islands</option>
+                      <option value="Faroe Islands">Faroe Islands</option>
+                      <option value="Fiji">Fiji</option>
+                      <option value="Finland">Finland</option>
+                    </select>
+                  </div>
+                </form>
+                <button class="btn-register-2">Save & Continue</button>
+              </div>
+            </div>
+          </section>
+
+
+
+          <section class="register-usr">
+            <div class="lft-pan">
+              <div class="form-box signup-form">
+                <div class="back join-us-desc prev-sec" id="prev">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.8625 3.225L13.3792 1.75L5.13751 10L13.3875 18.25L14.8625 16.775L8.08751 10L14.8625 3.225Z"
+                      fill="#8692A6" />
+                  </svg>
+                  <p>Back</b></p>
+                </div>
+                <form method="POST" id="complete_profile2">
+                  <div class="join-us">
+                    <h3>Register Individual Account!2</h3>
+                  </div>
+                  <div class="social-container">
+                    <p class="img-text join-us-desc">For the purpose of industry regulation, your details are required.
+                    </p>
+                  </div>
+                  <!-- <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <button>Sign Up</button> -->
+
+                  <hr style="height:2px; width:100%; border-width:0; background-color:#F5F5F5">
+                  <label>Date of birth</label>
+                  <input type="date" name="date" id="usr_birthdate" placeholder="Enter Date">
+                  <label for="Gender">Gender</label>
+                  <select name="gender" id="usr_gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                  <div class="form-group">
+                    <label>Occupation</label>
+                    <select name="occupation" id="usr_occupation">
+                      <option value="Test">Test</option>
+                      <option value="Test">Test</option>
+                    </select>
+                  </div>
+                </form>
+                <button class="btn-register-3">Save & Continue</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="register-usr">
+            <div class="lft-pan">
+              <div class="form-box signup-form">
+                <div class="back join-us-desc prev-sec" id="prev">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.8625 3.225L13.3792 1.75L5.13751 10L13.3875 18.25L14.8625 16.775L8.08751 10L14.8625 3.225Z"
+                      fill="#8692A6" />
+                  </svg>
+                  <p>Back</b></p>
+                </div>
+                <form method="POST" id="complete_profile3">
+                  <div class="join-us">
+                    <h3>Register Individual Account!3</h3>
+                  </div>
+                  <div class="social-container">
+                    <p class="img-text join-us-desc">For the purpose of industry regulation, your details are required.
+                    </p>
+                  </div>
+                  <!-- <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <button>Sign Up</button> -->
+
+                  <hr style="height:2px; width:100%; border-width:0; background-color:#F5F5F5">
+                  <label>Is this a Joint Account?</label>
+                  <select name="joint_account" id="joint_account">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </form>
+                <button class="btn-register-4">Save & Continue</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="register-usr">
+            <div class="lft-pan">
+              <div class="form-box signup-form">
+                <div class="back join-us-desc prev-sec" id="prev">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.8625 3.225L13.3792 1.75L5.13751 10L13.3875 18.25L14.8625 16.775L8.08751 10L14.8625 3.225Z"
+                      fill="#8692A6" />
+                  </svg>
+                  <p>Back</b></p>
+                </div>
+                <form method="POST" id="complete_profile4">
+                  <div class="join-us">
+                    <h3>Add Details of Another member </h3>
+                  </div>
+                  <div class="social-container">
+                    <p class="img-text join-us-desc">For the purpose of industry regulation, your details are required.
+                    </p>
+                  </div>
+                  <!-- <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <button>Sign Up</button> -->
+
+                  <hr style="height:2px; width:100%; border-width:0; background-color:#F5F5F5">
+                  <label>Your full name*</label>
+                  <input type="text" name="name" placeholder="Enter full name" id="another_name" autocomplete="on">
+                  <label>Email address*</label>
+                  <input type="email" name="email" placeholder="Enter email address" id="another_email"
+                    autocomplete="on">
+                  <div class="form-group">
+                    <label>Create password*</label>
+                    <input id="another_password" type="password" name="password" placeholder="Enter password">
+                    <a toggle="#another_password" class="toggle-password">Show</a>
+                  </div>
+                  <div>
+                    <input type="checkbox">
+                    <label>I agree to terms & conditions</label>
+                  </div>
+                </form>
+                <button class="btn-register-5">Save & Continue</button>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+          <section class="register-usr">
+            <div class="lft-pan">
+              <div class="form-box signup-form">
+                <div class="back join-us-desc prev-sec" id="prev">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.8625 3.225L13.3792 1.75L5.13751 10L13.3875 18.25L14.8625 16.775L8.08751 10L14.8625 3.225Z"
+                      fill="#8692A6" />
+                  </svg>
+                  <p>Back</b></p>
+                </div>
+                <form method="POST" id="complete_profile5">
+                  <div class="join-us">
+                    <h3>Complete Your Profile!</h3>
+                  </div>
+                  <div class="social-container">
+                    <p class="img-text join-us-desc">For the purpose of industry regulation, your details are required.
+                    </p>
+                  </div>
+                  <!-- <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <button>Sign Up</button> -->
+
+                  <hr style="height:2px; width:100%; border-width:0; background-color:#F5F5F5">
+
+                  <label>Phone number</label>
+                  <input type="number" name="phone" placeholder="Enter Phone number" id="another_phone"
+                    autocomplete="on">
+                  <label>Your address</label>
+                  <input type="email" name="address" placeholder="Please enter address" id="another_address"
+                    autocomplete="on">
+                  <div class="form-group">
+                    <label>Country of residence</label>
+                    <select id="another_country" name="country">
+
+                      <option value="Afganistan">Afghanistan</option>
+                      <option value="Albania">Albania</option>
+                      <option value="Algeria">Algeria</option>
+                      <option value="American Samoa">American Samoa</option>
+                      <option value="Andorra">Andorra</option>
+                      <option value="Angola">Angola</option>
+                      <option value="Anguilla">Anguilla</option>
+                      <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                      <option value="Cote DIvoire">Cote DIvoire</option>
+                      <option value="Croatia">Croatia</option>
+                      <option value="Cuba">Cuba</option>
+                      <option value="Curaco">Curacao</option>
+                      <option value="Cyprus">Cyprus</option>
+                      <option value="Czech Republic">Czech Republic</option>
+                      <option value="Denmark">Denmark</option>
+                      <option value="Djibouti">Djibouti</option>
+                      <option value="Dominica">Dominica</option>
+                      <option value="Dominican Republic">Dominican Republic</option>
+                      <option value="East Timor">East Timor</option>
+                      <option value="Ecuador">Ecuador</option>
+                      <option value="Egypt">Egypt</option>
+                      <option value="El Salvador">El Salvador</option>
+                      <option value="Equatorial Guinea">Equatorial Guinea</option>
+                      <option value="Eritrea">Eritrea</option>
+                      <option value="Estonia">Estonia</option>
+                      <option value="Ethiopia">Ethiopia</option>
+                      <option value="Falkland Islands">Falkland Islands</option>
+                      <option value="Faroe Islands">Faroe Islands</option>
+                      <option value="Fiji">Fiji</option>
+                      <option value="Finland">Finland</option>
+                    </select>
+                  </div>
+                </form>
+                <button class="btn-register-6">Save & Continue</button>
+              </div>
+            </div>
+          </section>
+
+
+
+
+          <section class="register-usr">
+            <div class="lft-pan">
+              <div class="form-box signup-form">
+                <div class="back join-us-desc prev-sec" id="prev">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.8625 3.225L13.3792 1.75L5.13751 10L13.3875 18.25L14.8625 16.775L8.08751 10L14.8625 3.225Z"
+                      fill="#8692A6" />
+                  </svg>
+                  <p>Back</b></p>
+                </div>
+                <form method="POST" id="complete_profile6">
+                  <div class="join-us">
+                    <h3>Complete Your Profile!</h3>
+                  </div>
+                  <div class="social-container">
+                    <p class="img-text join-us-desc">For the purpose of industry regulation, your details are required.
+                    </p>
+                  </div>
+
+                  <hr style="height:2px; width:100%; border-width:0; background-color:#F5F5F5">
+                  <label>Date of birth</label>
+                  <input type="date" name="date" id="another_birthdate" placeholder="Enter Date">
+                  <label for="Gender">Gender</label>
+                  <select name="gender" id="another_gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                  <div class="form-group">
+                    <label>Occupation</label>
+                    <select name="occupation" id="another_occupation">
+                      <option value="Test">Test</option>
+                      <option value="Test">Test</option>
+                    </select>
+                  </div>
+                </form>
+                <button class="btn-register-7">Save & Continue</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="register-usr">
+            <div class="lft-pan">
+              <div class="form-box signup-form">
+                <div class="back join-us-desc prev-sec" id="prev">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.8625 3.225L13.3792 1.75L5.13751 10L13.3875 18.25L14.8625 16.775L8.08751 10L14.8625 3.225Z"
+                      fill="#8692A6" />
+                  </svg>
+                  <p>Back</b></p>
+                </div>
+                <form method="POST" id="complete_profile7">
+                  <div class="join-us">
+                    <h3>Upload Documents!</h3>
+                  </div>
+                  <div class="social-container">
+                    <p class="img-text join-us-desc">For the purpose of industry regulation, your details are required.
+                    </p>
+                  </div>
+                  <!-- <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <button>Sign Up</button> -->
+
+                  <hr style="height:2px; width:100%; border-width:0; background-color:#F5F5F5">
+                  <label>Signature *</label>
+                  <input type="file" name="signature" id="signature" placeholder="Select from device ">
+                  <label>Photo*</label>
+                  <input type="file" name="photo" id="photo" placeholder="Select from device">
+                  <div>
+                    <input type="checkbox">
+                    <label>I agree to terms & conditions</label>
+                  </div>
+                  <div>
+                    <input type="checkbox">
+                    <label>I agree to terms & conditions</label>
+                  </div>
+                  <div>
+                    <input type="checkbox">
+                    <label>I agree to terms & conditions</label>
+                  </div>
+                </form>
+                <button class="btn-register-8">Register Account</button>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="register-usr">
+            <div class="lft-pan">
+              <div class="form-box signup-form">
+                <div class="back join-us-desc prev-sec" id="prev">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.8625 3.225L13.3792 1.75L5.13751 10L13.3875 18.25L14.8625 16.775L8.08751 10L14.8625 3.225Z"
+                      fill="#8692A6" />
+                  </svg>
+                  <p>Back</b></p>
+                </div>
+                <form method="POST" id="complete_profile8">
+                  <div class="join-us">
+                    <h3>Add Details of Next kin</h3>
+                  </div>
+                  <div class="social-container">
+                    <p class="img-text join-us-desc">For the purpose of industry regulation, your details are required.
+                    </p>
+                  </div>
+                  <!-- <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <button>Sign Up</button> -->
+
+                  <hr style="height:2px; width:100%; border-width:0; background-color:#F5F5F5">
+                  <label>Your full name*</label>
+                  <input type="text" name="name" id="kin_name" placeholder="Enter full name" autocomplete="on">
+                  <label>Next of kin relationship*</label>
+                  <select name="occupation" id="kin_occupation">
+                    <option value="Test">Test</option>
+                    <option value="Test">Test</option>
+                  </select>
+                </form>
+                <button class="btn-register-9">Register Account</button>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="register-usr">
+            <div class="lft-pan">
+              <div class="form-box signup-form">
+                <div class="back join-us-desc prev-sec" id="prev">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.8625 3.225L13.3792 1.75L5.13751 10L13.3875 18.25L14.8625 16.775L8.08751 10L14.8625 3.225Z"
+                      fill="#8692A6" />
+                  </svg>
+                  <p>Back</b></p>
+                </div>
+                <form method="POST" id="complete_profile9">
+                  <div class="join-us">
+                    <h3>Complete Your Profile!</h3>
+                  </div>
+                  <div class="social-container">
+                    <p class="img-text join-us-desc">For the purpose of industry regulation, your details are required.
+                    </p>
+                  </div>
+                  <!-- <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <button>Sign Up</button> -->
+
+                  <hr style="height:2px; width:100%; border-width:0; background-color:#F5F5F5">
+                  <label>Phone number</label>
+                  <input type="number" name="phone" id="kin_phone" placeholder="Enter Phone number" autocomplete="on">
+                  <label>Your address</label>
+                  <input type="email" name="address" id="kin_address" placeholder="Please enter address"
+                    autocomplete="on">
+                  <div class="form-group">
+                    <label>Country of residence</label>
+                    <select id="kin_country" name="country">
+
+                      <option value="Afganistan">Afghanistan</option>
+                      <option value="Albania">Albania</option>
+                      <option value="Algeria">Algeria</option>
+                      <option value="American Samoa">American Samoa</option>
+                      <option value="Andorra">Andorra</option>
+                      <option value="Angola">Angola</option>
+                      <option value="Anguilla">Anguilla</option>
+                      <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                      <option value="Cote DIvoire">Cote DIvoire</option>
+                      <option value="Croatia">Croatia</option>
+                      <option value="Cuba">Cuba</option>
+                      <option value="Curaco">Curacao</option>
+                      <option value="Cyprus">Cyprus</option>
+                      <option value="Czech Republic">Czech Republic</option>
+                      <option value="Denmark">Denmark</option>
+                      <option value="Djibouti">Djibouti</option>
+                      <option value="Dominica">Dominica</option>
+                      <option value="Dominican Republic">Dominican Republic</option>
+                      <option value="East Timor">East Timor</option>
+                      <option value="Ecuador">Ecuador</option>
+                      <option value="Egypt">Egypt</option>
+                      <option value="El Salvador">El Salvador</option>
+                      <option value="Equatorial Guinea">Equatorial Guinea</option>
+                      <option value="Eritrea">Eritrea</option>
+                      <option value="Estonia">Estonia</option>
+                      <option value="Ethiopia">Ethiopia</option>
+                      <option value="Falkland Islands">Falkland Islands</option>
+                      <option value="Faroe Islands">Faroe Islands</option>
+                      <option value="Fiji">Fiji</option>
+                      <option value="Finland">Finland</option>
+                    </select>
+                  </div>
+                </form>
+                <button class="btn-register-10">Save & Continue</button>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="register-usr">
+            <div class="lft-pan">
+              <div class="form-box signup-form">
+                <div class="back join-us-desc prev-sec" id="prev">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.8625 3.225L13.3792 1.75L5.13751 10L13.3875 18.25L14.8625 16.775L8.08751 10L14.8625 3.225Z"
+                      fill="#8692A6" />
+                  </svg>
+                  <p>Back</b></p>
+                </div>
+                <form method="POST" id="complete_profile10">
+                  <div class="join-us">
+                    <h3>Upload Documents!</h3>
+                  </div>
+                  <div class="social-container">
+                    <p class="img-text join-us-desc">For the purpose of industry regulation, your details are required.
+                    </p>
+                  </div>
+                  <!-- <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <button>Sign Up</button> -->
+
+                  <hr style="height:2px; width:100%; border-width:0; background-color:#F5F5F5">
+                  <label>Signature *</label>
+                  <input type="file" name="signature" id="kin_signature" placeholder="Select from device ">
+                  <label>Photo*</label>
+                  <input type="file" name="photo" id="kin_photo" placeholder="Select from device">
+                  <div>
+                    <input type="checkbox">
+                    <label>I agree to terms & conditions</label>
+                  </div>
+                  <div>
+                    <input type="checkbox">
+                    <label>I agree to terms & conditions</label>
+                  </div>
+                  <div>
+                    <input type="checkbox">
+                    <label>I agree to terms & conditions</label>
+                  </div>
+                </form>
+                <button class="btn-register-11">Register Account</button>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="register-usr">
+            <div class="lft-pan">
+              <div class="form-box signup-form">
+                <div class="back join-us-desc prev-sec" id="prev">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.8625 3.225L13.3792 1.75L5.13751 10L13.3875 18.25L14.8625 16.775L8.08751 10L14.8625 3.225Z"
+                      fill="#8692A6" />
+                  </svg>
+                  <p>Back</b></p>
+                </div>
+                <form method="POST" id="complete_profile11">
+                  <div class="join-us">
+                    <h3>Register Business Account!</h3>
+                  </div>
+                  <div class="social-container">
+                    <p class="img-text join-us-desc">For the purpose of industry regulation, your details are required.
+                    </p>
+                  </div>
+                  <!-- <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <button>Sign Up</button> -->
+
+                  <hr style="height:2px; width:100%; border-width:0; background-color:#F5F5F5">
+                  <label>Company name*</label>
+                  <input type="text" name="name" id="company_name" placeholder="Invictus Innocent" autocomplete="on">
+                  <label>Company Registration number*</label>
+                  <input type="text" name="number" id="company_number" placeholder="Enter company registration number"
+                    autocomplete="on">
+                  <label>Tax id*</label>
+                  <input type="text" name="tax_id" id="tax_id" placeholder="Enter tax id" autocomplete="on">
+                  <label>Industry</label>
+                  <select name="Industry" id="company_Industry">
+                    <option value="Test">Test</option>
+                    <option value="Test">Test</option>
+                  </select>
+                  <div>
+                    <input type="checkbox">
+                    <label>I agree to terms & conditions</label>
+                  </div>
+                  <div>
+                  </div>
+                </form>
+                <button class="btn-register-12">Save & Continue</button>
+              </div>
+            </div>
+          </section>
+
+
+
+          <section class="register-usr">
+            <div class="lft-pan">
+              <div class="form-box signup-form">
+                <div class="back join-us-desc prev-sec" id="prev">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.8625 3.225L13.3792 1.75L5.13751 10L13.3875 18.25L14.8625 16.775L8.08751 10L14.8625 3.225Z"
+                      fill="#8692A6" />
+                  </svg>
+                  <p>Back</b></p>
+                </div>
+                <form method="POST" id="complete_profile13">
+                  <div class="join-us">
+                    <h3>Complete Your Profile!</h3>
+                  </div>
+                  <div class="social-container">
+                    <p class="img-text join-us-desc">For the purpose of industry regulation, your details are required.
+                    </p>
+                  </div>
+                  <!-- <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <button>Sign Up</button> -->
+
+                  <hr style="height:2px; width:100%; border-width:0; background-color:#F5F5F5">
+                  <label>Date of incorporation</label>
+                  <input type="date" name="date" id="company_date" placeholder="Enter Date">
+
+                  <label>Email address*</label>
+                  <input type="email" name="email" id="company_email" placeholder="Enter email address"
+                    autocomplete="on">
+                  <div class="form-group">
+                    <label>Create password*</label>
+                    <input id="comapny_password" type="password" name="password" placeholder="Enter password">
+                    <a toggle="#comapny_password" class="toggle-password">Show</a>
                   </div>
                   <div>
                     <input type="checkbox">
@@ -329,7 +955,169 @@
                   <div>
                   </div>
                 </form>
-                <button class="btn-register">testvasg</button>
+                <button class="btn-register-13">Save & Continue</button>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="register-usr">
+            <div class="lft-pan">
+              <div class="form-box signup-form">
+                <div class="back join-us-desc prev-sec" id="prev">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.8625 3.225L13.3792 1.75L5.13751 10L13.3875 18.25L14.8625 16.775L8.08751 10L14.8625 3.225Z"
+                      fill="#8692A6" />
+                  </svg>
+                  <p>Back</b></p>
+                </div>
+                <form method="POST" id="complete_profile14">
+                  <div class="join-us">
+                    <h3>Complete Your Profile!</h3>
+                  </div>
+                  <div class="social-container">
+                    <p class="img-text join-us-desc">For the purpose of industry regulation, your details are required.
+                    </p>
+                  </div>
+                  <!-- <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <button>Sign Up</button> -->
+
+                  <hr style="height:2px; width:100%; border-width:0; background-color:#F5F5F5">
+                  <label>Phone number</label>
+                  <input type="number" name="phone" id="company_phone" placeholder="Enter full name" autocomplete="on">
+                  <label>Your address</label>
+                  <input type="email" name="address" id="company_address" placeholder="Please enter address"
+                    autocomplete="on">
+                  <div class="form-group">
+                    <label>Country of residence</label>
+                    <select id="company_country" name="country">
+
+                      <option value="Afganistan">Afghanistan</option>
+                      <option value="Albania">Albania</option>
+                      <option value="Algeria">Algeria</option>
+                      <option value="American Samoa">American Samoa</option>
+                      <option value="Andorra">Andorra</option>
+                      <option value="Angola">Angola</option>
+                      <option value="Anguilla">Anguilla</option>
+                      <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                      <option value="Cote DIvoire">Cote DIvoire</option>
+                      <option value="Croatia">Croatia</option>
+                      <option value="Cuba">Cuba</option>
+                      <option value="Curaco">Curacao</option>
+                      <option value="Cyprus">Cyprus</option>
+                      <option value="Czech Republic">Czech Republic</option>
+                      <option value="Denmark">Denmark</option>
+                      <option value="Djibouti">Djibouti</option>
+                      <option value="Dominica">Dominica</option>
+                      <option value="Dominican Republic">Dominican Republic</option>
+                      <option value="East Timor">East Timor</option>
+                      <option value="Ecuador">Ecuador</option>
+                      <option value="Egypt">Egypt</option>
+                      <option value="El Salvador">El Salvador</option>
+                      <option value="Equatorial Guinea">Equatorial Guinea</option>
+                      <option value="Eritrea">Eritrea</option>
+                      <option value="Estonia">Estonia</option>
+                      <option value="Ethiopia">Ethiopia</option>
+                      <option value="Falkland Islands">Falkland Islands</option>
+                      <option value="Faroe Islands">Faroe Islands</option>
+                      <option value="Fiji">Fiji</option>
+                      <option value="Finland">Finland</option>
+                    </select>
+                  </div>
+                </form>
+                <button class="btn-register-14">Save & Continue</button>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="register-usr">
+            <div class="lft-pan">
+              <div class="form-box signup-form">
+                <div class="back join-us-desc prev-sec" id="prev">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.8625 3.225L13.3792 1.75L5.13751 10L13.3875 18.25L14.8625 16.775L8.08751 10L14.8625 3.225Z"
+                      fill="#8692A6" />
+                  </svg>
+                  <p>Back</b></p>
+                </div>
+                <form method="POST" id="complete_profile15">
+                  <div class="join-us">
+                    <h3>Executive management</h3>
+                  </div>
+                  <div class="social-container">
+                    <p class="img-text join-us-desc">For the purpose of industry regulation, your details are required.
+                    </p>
+                  </div>
+                  <!-- <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <button>Sign Up</button> -->
+
+                  <hr style="height:2px; width:100%; border-width:0; background-color:#F5F5F5">
+                  <label>Enter 4 exetive names:</label>
+                  <input type="text" name="name" id="exetive_name1" placeholder="Enter first name surname "
+                    autocomplete="on">
+                  <input type="text" name="name" id="exetive_name2" placeholder="Enter first name surname "
+                    autocomplete="on">
+                  <input type="text" name="name" id="exetive_name3" placeholder="Enter first name surname "
+                    autocomplete="on">
+                  <input type="text" name="name" id="exetive_name4" placeholder="Enter first name surname "
+                    autocomplete="on">
+                </form>
+                <button class="btn-register-15">Save & Continue</button>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="register-usr">
+            <div class="lft-pan">
+              <div class="form-box signup-form">
+                <div class="back join-us-desc prev-sec" id="prev">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.8625 3.225L13.3792 1.75L5.13751 10L13.3875 18.25L14.8625 16.775L8.08751 10L14.8625 3.225Z"
+                      fill="#8692A6" />
+                  </svg>
+                  <p>Back</b></p>
+                </div>
+                <form method="POST" id="complete_profile16">
+                  <div class="join-us">
+                    <h3>Upload Documents!</h3>
+                  </div>
+                  <div class="social-container">
+                    <p class="img-text join-us-desc">For the purpose of industry regulation, your details are required.
+                    </p>
+                  </div>
+                  <!-- <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                  <input type="password" placeholder="Password" />
+                  <button>Sign Up</button> -->
+
+                  <hr style="height:2px; width:100%; border-width:0; background-color:#F5F5F5">
+                  <label>Signature *</label>
+                  <input type="file" name="signature" id="company_signature" placeholder="Select from device ">
+                  <label>Photo*</label>
+                  <input type="file" name="photo" id="company_photo" placeholder="Select from device">
+                  <div>
+                    <input type="checkbox">
+                    <label>I agree to terms & conditions</label>
+                  </div>
+                  <div>
+                    <input type="checkbox">
+                    <label>I agree to terms & conditions</label>
+                  </div>
+                  <div>
+                    <input type="checkbox">
+                    <label>I agree to terms & conditions</label>
+                  </div>
+                </form>
+                <button class="btn-register-16">Register Account</button>
               </div>
             </div>
           </section>
@@ -498,32 +1286,6 @@
     </div>
   </div>
 
-  <script>
-    $(function () {
-      //hang on event of form with id=myform
-      $(".btn-register").click(function () {
-
-        //prevent Default functionality
-        // e.preventDefault();
-
-        //get the action-url of the form
-        // var actionurl = e.currentTarget.action;
-
-        //do your own request an handle the results
-        // $.ajax({
-        //   url: actionurl,
-        //   type: 'post',
-        //   dataType: 'application/json',
-        //   data: $("#myform").serialize(),
-        //   success: function (data) {
-        //             ... do something with the data...
-        //         }
-        // });
-        alert("data");
-      });
-
-    });
-  </script>
 
 
   <!-- Bootstrap Js Start Here -->
