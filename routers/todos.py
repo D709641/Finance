@@ -13,6 +13,8 @@ from .auth import get_current_user
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
+templates = Jinja2Templates(directory="templates")
+models.Base.metadata.create_all(bind=engine)
 
 router = APIRouter(
     prefix="/todos",
@@ -20,9 +22,9 @@ router = APIRouter(
     responses={404: {"description": "Not found"}}
 )
 
-models.Base.metadata.create_all(bind=engine)
 
-templates = Jinja2Templates(directory="templates")
+
+
 
 
 def get_db():
@@ -45,25 +47,26 @@ def get_db():
 
 
 @router.get("/contact", response_class=HTMLResponse)
-async def add_new_todo(request: Request):
-
+async def contact(request: Request):
     return templates.TemplateResponse("contact.html", {"request": request})
 
 
 @router.post("/contact", response_class=HTMLResponse)
-async def create_todo(request: Request, name: str = Form(...), email: str = Form(...),
+async def contact_user(request: Request, name: str = Form(...), email: str = Form(...),
                       phone: int = Form(...), message: str = Form(...), db: Session = Depends(get_db)):
 
     todo_model = models.Contact()
     todo_model.name = name
     todo_model.email = email
     todo_model.phone = phone
-    todo_model.message = message
+    todo_model.message = message 
     todo_model.complete = False
     print(todo_model)
     db.add(todo_model)
     db.commit()
-    return {"sucess"}
+    # return {"sucess"}
+    msg = "User successfully created"
+    return templates.TemplateResponse("contact.html", {"request": request, "msg": msg})
     return RedirectResponse(url="/contact", status_code=status.HTTP_302_FOUND)
 
 

@@ -1,4 +1,5 @@
 from email import message
+import string
 from sqlalchemy import Boolean, Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from database import Base
@@ -11,8 +12,8 @@ class Contact(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String)
     email = Column(String)
-    phone = Column(Integer)
+    phone = Column(String)
     complete = Column(Boolean, default=False)
 
-    message = Column(Integer)
+    message = Column(String)
     # owner = relationship("Users", back_populates="todos")

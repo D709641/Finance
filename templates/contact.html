@@ -172,19 +172,19 @@
           <div class="col-lg-5 col-md-12">
             <div class="call-back-box1">
               <h3 class="section-title">Request a Call Back</h3>
-              <form class="message-box">
+              <form class="message-box" method="POST" action="/todos/contact">
                 <div class="row">
                   <div class="form-group col-lg-12">
-                    <input type="text" class="form-control" id="inputAddress1" placeholder="Name" required />
+                    <input type="text" class="form-control"  placeholder="Name" name="name" required />
                   </div>
                   <div class="form-group col-lg-12">
-                    <input type="email" class="form-control" id="inputAddress2" placeholder="Email" required />
+                    <input type="email" class="form-control"  placeholder="Email" name="email" required />
                   </div>
                   <div class="form-group col-lg-12">
-                    <input type="number" class="form-control" id="inputAddress3" placeholder="Phone" required />
+                    <input type="number" class="form-control" placeholder="Phone" name="phone" required />
                   </div>
                   <div class="form-group col-lg-12">
-                    <textarea name="comment" id="message" class="form-control" placeholder="Message" cols="30"
+                    <textarea  class="form-control" placeholder="Message" name="message" cols="30"
                       rows="4"></textarea>
                   </div>
                   <div class="form-group col-lg-12">
